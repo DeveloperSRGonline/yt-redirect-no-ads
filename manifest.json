@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YT No-Ads Redirect",
+  "version": "1.0",
+  "description": "Auto redirects YouTube to yout-ube.com — no ads",
+  "permissions": ["tabs", "webNavigation"],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.yout-ube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "YT No-Ads Redirect — Active"
+  }
+}
